@@ -74,19 +74,10 @@ $(".key").click(function(){
 	}
 });
 
-
 function updateZoom(){
-	console.log("debug");
-	if($(window).width() <= 1366){
-		$("html").css({
-		'zoom': '0.9'
-		});
-	}
-	if($(window).width() > 1366){
-		$("html").css({
-		'zoom': '1'
-		});
-	}
+	$("html").css({
+	'zoom': window.screen.width/1920
+	});
 }
 
 
