@@ -5,6 +5,7 @@
 body{
 	background-color: #2a2a2a;
 	background-image: -webkit-linear-gradient(top, #151515, #343434);
+
 }
 html{
 }
@@ -61,7 +62,7 @@ html{
     color: #ffffff;
     background: #151515;
     border: 3px solid #5B3314;
-    -moz-border-radius: 10px;
+    border-radius: 10px;
     -webkit-border-radius: 10px;
 }
 .third_row .key{

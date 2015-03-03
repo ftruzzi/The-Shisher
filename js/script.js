@@ -1,4 +1,4 @@
-var effects = false, loop = true, currentbg = 0;
+var effects = false, loop = true, currentbg = 0, FF = !(window.mozInnerScreenX == null);
 
 var bgmusic = [
 	{file: "bennyhill"},
@@ -46,7 +46,7 @@ $(document).ready(function(){
 		audio.setAttribute('src', "audio/"+bgmusic[i].file+".mp3");
 		document.body.appendChild(audio);
 	}
-	process(71);
+	if(!FF) process(71);
 });
 
 $(window).resize(function(){
