@@ -32,6 +32,7 @@ var combos = [
 
 
 $(document).ready(function(){
+	updateZoom();
 	//create audio elements in HTML file
 	for(i=0;i<combos.length-1;i++){
 		var audio = document.createElement("audio");
@@ -47,6 +48,10 @@ $(document).ready(function(){
 	}
 	process(71);
 });
+
+$(window).resize(function(){
+	updateZoom();
+})
 
 $(document).keydown(function(e){
 	$("div").removeClass("clicked");
@@ -68,6 +73,22 @@ $(".key").click(function(){
 		specialToggle();
 	}
 });
+
+
+function updateZoom(){
+	console.log("debug");
+	if($(window).width() <= 1366){
+		$("html").css({
+		'zoom': '0.9'
+		});
+	}
+	if($(window).width() > 1366){
+		$("html").css({
+		'zoom': '1'
+		});
+	}
+}
+
 
 function process(key){
 	if(key==70 || key==72){ //prev & next
