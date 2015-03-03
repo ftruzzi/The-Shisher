@@ -5,12 +5,21 @@
 		<title>The Shisher | A Matteo Renzi English player.</title>
 	</head>	
 	<body>
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
 
 		<div class="header">
 			<h1 id="head_text">The Shisher</h1>
 			
 		</div>
 		<div class="maindocu">
+
 			<div class="keyboard">
 			    <div class="first_row">
 			    	<div class="key">
@@ -123,12 +132,11 @@
 			    </div>
 		 	</div>
 		</div>
+			<footer id="footer" class="footer navbar-fixed-bottom" style="text-align: center">
+	       			<p class="text-muted" id="footer">A funny weekend project by <a href="http://truzzi.me">Francesco Truzzi.</a> <a title="This is bad code. Feel free to contribute." href="http://github.com/ftruzzi"><img src="images/github.png" id="gitimg"></a></p>
+					<div id="fbshare" class="fb-share-button" data-href="http://http://ftruzzi.github.io/The-Shisher/" data-layout="button_count"></div>
 
-		<footer class="footer navbar-fixed-bottom">
-
-       			<p class="text-muted" id="footer">A funny weekend project by <a href="http://truzzi.me">Francesco Truzzi.</a> <a title="This is bad code. Feel free to contribute." href="http://github.com/ftruzzi"><img src="images/github.png" id="gitimg"></a></p>
-
-    	</footer>
+	    	</footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	 	<script src="js/script.js"></script>
 

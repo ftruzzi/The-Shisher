@@ -120,9 +120,14 @@ body{
 	padding-bottom: 5px;
 }
 #footer{
-	text-align: center;
+	display: inline-block;
 }
 #gitimg{
 	max-height: 20px;
 	max-width: 20px;
+}
+#fbshare{
+	display: inline-block;
+	position: relative;
+	top: 5px;
 }
