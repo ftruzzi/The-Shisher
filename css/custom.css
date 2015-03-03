@@ -7,7 +7,6 @@ body{
 	background-image: -webkit-linear-gradient(top, #151515, #343434);
 }
 html{
-	zoom:1;
 }
 .maindocu{
 	display: flex;
