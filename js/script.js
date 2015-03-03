@@ -47,6 +47,14 @@ $(document).ready(function(){
 		document.body.appendChild(audio);
 	}
 	if(!FF) process(71);
+<<<<<<< HEAD
+	if(FF){
+		$(".letter").css({
+			'font-family': 'Verdana'
+		})		
+	}
+=======
+>>>>>>> 7738e4c894177ccd6abd69c61835e0a93e0ea593
 });
 
 $(window).resize(function(){
