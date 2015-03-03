@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Marcelle';
+    src: url("Marcsc.ttf");
+}
+body{
+	background-color: #2a2a2a;
+	background-image: -webkit-linear-gradient(top, #151515, #343434);
+}
+.maindocu{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#head_text{
+	text-align: center;
+	text-shadow: 0px 1px 1px #4d4d4d;
+	color: #e86700;
+	font-family: "Marcelle";
+	font-size: 1000%;
+	margin: auto;
+	margin-top: 5%;
+	padding-bottom: 3%;
+}
+.keyboard{
+	border-spacing: 5px;
+}
+.first_row{
+	display: block;
+	margin: auto;
+	width: 1100px;
+}
+.second_row{
+	display: block;
+	margin: auto;
+	width: 990px;
+}
+.third_row{
+	display: block;
+	margin: auto;
+	width: 880px;
+}
+.spacebar{
+	display: block;
+	width: 550px;
+    height: 75px;
+    margin: auto;
+}
+.key{
+	display: table-cell;
+	max-width: 100px;
+	max-height: 100px;
+	min-width: 100px;
+    min-height: 100px;
+    border-spacing: 5px;
+    text-align: center;
+    vertical-align: middle;
+    font-family: "Verdana";
+    font-size: 200%;
+    color: #ffffff;
+    background: #151515;
+    border: 3px solid #5B3314;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+}
+
+.third_row .key{
+	max-width: 110px;
+}
+#spacebar{
+	display: table-cell;
+	max-width: none;
+	width: 500px;
+	height: 75px;
+}
+.clicked{
+    position: relative;
+    top: 2px;
+    left: 2px;
+    border-color: #D83712;
+}
+.letter{
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+	font-size: 150%;
+    color:#e86700;
+}
+.out{
+	margin: 0;
+	padding: 0;
+	font-family: monospace;
+	font-size: 150%;
+    color:#808080;
+}
+.option{
+	color: #E1BA44;
+}
+.special{
+	color:#FF0000;
+	font-size: 200%;
+}
+.special_toggle{
+	border-color: #FF0000;
+}
+.message{
+	margin: 0;
+	padding-top: 15px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	padding-right: 5px;
+	margin: auto;
+	font-size: 50%;
+	color:#808080;
+}
+.message2{
+	margin: 0;
+	font-size: 50%;
+	color:#808080;
+	padding-bottom: 5px;
+}
+#footer{
+	text-align: center;
+}
+#gitimg{
+	max-height: 20px;
+	max-width: 20px;
+}
