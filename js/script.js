@@ -17,7 +17,7 @@ var combos = [
 	{key: 68, file: "lanch", desc: "LANCHHEEH"}, //D
 	{key: 79, file:"speaking", desc: "TO SPEAKING ABBOUZHE"}, //O
 	{key: 90, file: "mader", desc: "MAI MADER"}, //Z
-	{key: 67, file: "crai", desc: "CRAI"}, //C
+	{key: 67, file: "CRAI", desc: "CRAI"}, //C
 	{key: 73, file: "time", desc: "TIME TO TO TO"}, //I
 	{key: 66, file: "commerciala", desc: "DEIDEA WITAUT MARKET COMMERCIAL-H"}, //B
 	{key: 76, file: "berlin", desc: "BERLIN WALLZ"}, //L
