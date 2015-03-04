@@ -1,10 +1,11 @@
 @font-face {
     font-family: 'Marcelle';
-    src: url("Marcsc.ttf");
+    src: url("fonts/Marcsc.ttf") format('truetype'),
+    	url('fonts/Marcsc.eot') format('embedded-opentype');
 }
 body{
 	background-color: #2a2a2a;
-	background-image: -webkit-linear-gradient(top, #151515, #343434);
+	background-image: linear-gradient(to bottom, #151515, #343434);
 
 }
 html{

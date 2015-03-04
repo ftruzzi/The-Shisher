@@ -1,5 +1,22 @@
 var effects = false, loop = true, currentbg = 0, FF = !(window.mozInnerScreenX == null);
 
+function GetIEVersion() {
+  var sAgent = window.navigator.userAgent;
+  var Idx = sAgent.indexOf("MSIE");
+
+  // If IE, return version number.
+  if (Idx > 0) 
+    return parseInt(sAgent.substring(Idx+ 5, sAgent.indexOf(".", Idx)));
+
+  // If IE 11 then look for Updated user agent string.
+  else if (!!navigator.userAgent.match(/Trident\/7\./)) 
+    return 11;
+
+  else
+    return 0; //It is not IE
+}
+
+
 var bgmusic = [
 	{file: "bennyhill"},
 	{file: "cancan"},
@@ -46,8 +63,8 @@ $(document).ready(function(){
 		audio.setAttribute('src', "audio/"+bgmusic[i].file+".mp3");
 		document.body.appendChild(audio);
 	}
-	if(!FF) process(71);
-	if(FF){
+	if(!FF && !GetIEVersion()) process(71);
+	if(FF || GetIEVersion()){
 		$(".letter").css({
 			'font-family': 'Verdana'
 		})		
