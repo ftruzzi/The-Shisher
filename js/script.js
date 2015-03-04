@@ -80,7 +80,10 @@ $(".key").click(function(){
 });
 
 function updateZoom(){
-	$("html").css({
+	$(".keyboard").css({
+	'zoom': window.screen.width/1920
+	});
+	$(".header").css({
 	'zoom': window.screen.width/1920
 	});
 }
