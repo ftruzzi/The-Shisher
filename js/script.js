@@ -1,4 +1,5 @@
-var effects = false, loop = true, currentbg = 0, FF = !(window.mozInnerScreenX == null);
+var effects = false, loop = true, currentbg = 0, FF = !(window.mozInnerScreenX == null), Safari = navigator.vendor.indexOf("Apple")==0 && /\sSafari\//.test(navigator.userAgent); // true or false
+
 
 function GetIEVersion() {
   var sAgent = window.navigator.userAgent;
@@ -63,7 +64,7 @@ $(document).ready(function(){
 		audio.setAttribute('src', "audio/"+bgmusic[i].file+".mp3");
 		document.body.appendChild(audio);
 	}
-	if(!FF && !GetIEVersion()) process(71);
+	if(!FF && !GetIEVersion() && !Safari) process(71);
 	if(FF || GetIEVersion()){
 		$(".letter").css({
 			'font-family': 'Verdana'
