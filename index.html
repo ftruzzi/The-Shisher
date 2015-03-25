@@ -5,46 +5,48 @@
 		<title>The Shisher | A Matteo Renzi English player.</title>
 	</head>	
 	<body>
-		<div id="fb-root"></div>
-		<script>
-			window.fbAsyncInit = function() {
-			FB.init({
-			  appId      : '449250018559194',
-			  xfbml      : true,
-			  version    : 'v2.2'
-			});
-			};
+        <a href="https://github.com/ftruzzi"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+        <div id="fb-root"></div>
+        <script>
+            window.fbAsyncInit = function() {
+            FB.init({
+              appId      : '449250018559194',
+              xfbml      : true,
+              version    : 'v2.2'
+            });
+            };
 
-			(function(d, s, id){
-			 var js, fjs = d.getElementsByTagName(s)[0];
-			 if (d.getElementById(id)) {return;}
-			 js = d.createElement(s); js.id = id;
-			 js.src = "//connect.facebook.net/en_US/sdk.js";
-			 fjs.parentNode.insertBefore(js, fjs);
-			}(document, 'script', 'facebook-jssdk'));
-			</script>
+            (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+            </script>
 		<div class="header">
 			<h1 id="head_text">The Shisher</h1>
-			
-		</div>
-		<div class="maindocu">
-
+		</div><div class="maindocu">
 			<div class="keyboard">
 			    <div class="first_row">
 			    	<div class="key">
 			    		<p class="letter">Q</p>
 			    		<p class="message">DEDEDE</p>
+                        <p class="message alt_message hidden">ENGLISH</p>
 			    	</div>
 			    	<div class="key">
 			    		<p class="letter">W</p>
              			<p class="message2">DEDEDE DEDEDE</p>
+                        <p class="message2 alt_message hidden">TU <br> SUCCHI?</p>
               		</div>
 			    	<div class="key">
 			    		<p class="letter">E</p>
              			<p class="message">EHMMM</p>
+                        <p class="message2 alt_message hidden">CI SOFFI DENTRO</p>
 			    	</div>
 			    	<div class="key">
-			    		<p class="letter out">R</p>
+			    		<p class="letter">R</p>
+                        <p class="message">BICOZ</p>
 			    	</div>
 			    	<div class="key" >
 			    		<p class="letter option" id="loop">T</p>
@@ -55,7 +57,8 @@
 						<p class="message">EFFECTS</p>
 			    	</div>
 			    	<div class="key">
-						<p class="letter out">U</p>
+						<p class="letter">U</p>
+                        <p class="message">DISTROID</p>
 			    	</div>
 			    	<div class="key">
 						<p class="letter">I</p>
@@ -74,10 +77,12 @@
 			    	<div class="key">
 			    		<p class="letter">A</p>
               			<p class="message2">EIGHTY UHHHH</p>
+                        <p class="message2 alt_message hidden">WHAT THE FOX</p>
               		</div>
 			    	<div class="key">
 			    		<p class="letter">S</p>
               			<p class="message">STRACCIO</p>
+                        <p class="message alt_message hidden">NEIN</p>
               		</div>
 			    	<div class="key">
 			    		<p class="letter">D</p>
@@ -109,6 +114,7 @@
 			    	<div class="key">
 			    		<p class="letter">Z</p>
               			<p class="message">MADER</p>
+                        <p class="message alt_message hidden">MONA</p>
               		</div>
 			    	<div class="key">
 			    		<p class="letter">X</p>
@@ -128,25 +134,35 @@
               		</div>
 			    	<div class="key">
 			    		<p class="letter">N</p>
-              			<p class="message">WALKER</p></div>
+              			<p class="message">WALKER</p>
+                    </div>
 			    	<div class="key">
 			    		<p class="letter">M</p>
               			<p class="message">BREVETTO</p>
               		</div>
+                    <div class="key">
+                        <p class="letter out"></p>
+                    </div>
 			    </div>
 			    <div class="spacebar">
+                    <div class="key alt">
+                        <p class="letter">ALT</p>
+                    </div>
 			    	<div class="key" id="spacebar">
 			    		<p class="letter">SHISH!</p>
               		</div>
+                    <div class="key alt">
+                        <p class="letter">ALT</p>
+                    </div>
 			    </div>
 		 	</div>
 		</div>
-			<footer id="footer" class="footer navbar-fixed-bottom" style="text-align: center">
-	       			<p class="text-muted" id="footer">A fun weekend project by <a href="http://truzzi.me">Francesco Truzzi.</a> <a title="This is bad code. Feel free to contribute." href="http://github.com/ftruzzi"><img src="images/github.png" id="gitimg"></a></p>
-					<div id="fbshare" class="fb-share-button" data-href="http://ftruzzi.github.io/The-Shisher/" data-layout="button_count"></div>
-					<a href="https://twitter.com/share" class="twitter-share-button" data-via="ftruzzi" data-hashtags="SHISH!">Tweet</a>
-					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-	    	</footer>
+		<footer id="footer" class="footer navbar-fixed-bottom" style="text-align: center">
+                <p class="text-muted" id="footer">A fun weekend project by <a href="http://truzzi.me">Francesco Truzzi.</a> <a title="This is bad code. Feel free to contribute." href="http://github.com/ftruzzi"><img src="images/github.png" id="gitimg"></a></p>
+                <div id="fbshare" class="fb-share-button" data-href="http://ftruzzi.github.io/The-Shisher/" data-layout="button_count"></div>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="ftruzzi" data-hashtags="SHISH!">Tweet</a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </footer>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	 	<script src="js/script.js"></script>
 

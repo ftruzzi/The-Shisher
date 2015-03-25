@@ -25,33 +25,38 @@ html{
 	padding-bottom: 3%;
 }
 .keyboard{
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
 	border-spacing: 5px;
 }
 .first_row{
 	display: block;
 	margin: auto;
-	width: 1100px;
+	width: 1050px;
+
 }
 .second_row{
 	display: block;
 	margin: auto;
-	width: 990px;
+	width: 945px;
 }
 .third_row{
 	display: block;
 	margin: auto;
-	width: 880px;
+	width: 850px;
 }
 .spacebar{
 	display: block;
-	width: 550px;
+	width: 725px;
     height: 75px;
     margin: auto;
 }
 .key{
 	display: table-cell;
-	max-width: 100px;
-	max-height: 100px;
+	max-width: 110px;
+	max-height: 110px;
 	min-width: 100px;
     min-height: 100px;
     border-spacing: 5px;
@@ -68,10 +73,15 @@ html{
 .third_row .key{
 	max-width: 110px;
 }
+.ctrl{
+    display: table-cell;
+    margin-left: 0;
+    font-size: 150%;
+}
 #spacebar{
 	display: table-cell;
 	max-width: none;
-	width: 500px;
+	min-width: 500px;
 	height: 75px;
 }
 .clicked{
@@ -97,6 +107,9 @@ html{
 .option{
 	color: #E1BA44;
 }
+.red{
+    color: #FF0000;
+}
 .special{
 	color:#FF0000;
 	font-size: 200%;
@@ -119,6 +132,9 @@ html{
 	font-size: 50%;
 	color:#808080;
 	padding-bottom: 5px;
+}
+.alt{
+    font-size: 150%;
 }
 #footer{
 	display: inline-block;
