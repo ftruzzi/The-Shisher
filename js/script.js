@@ -14,7 +14,7 @@ var combos = [
 	{key: 69, file: "ehm", desc: "EHMHMHMH", alt_file: "soffi", alt_desc: "CI SOFFI DENTRO?"}, //E
 	{key: 82, file: "bicoz", desc: "BICOZ"}, //R
 	{key: 88, file: "GENIUS", desc: "GENIUS!"}, //X
-	{key: 65, file: "eighty", desc: "EIGHTY UUUUH", alt_file: "FOX"}, //A
+	{key: 65, file: "eighty", desc: "EIGHTY UUUUH", alt_file: "fox"}, //A
 	{key: 83, file: "mistraccio", desc: "FEEHEHEH MISTRACCIOH", alt_file: "nein"}, //S
 	{key: 68, file: "lanch", desc: "LANCHHEEH"}, //D
 	{key: 79, file:"speaking", desc: "TO SPEAKING ABBOUZHE"}, //O
