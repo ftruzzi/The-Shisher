@@ -149,6 +149,6 @@ html{
 	top: 5px;
 }
 .twitter-share-button{
-	position: relative;
+	position: relative !important;
 	top:5px;
 }
